@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="553.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trevithickmastersjarizmendyp7.FXMLDocumentController">
+   <children>
+      <TextArea fx:id="taheader" editable="false" prefHeight="83.0" prefWidth="535.0" promptText="Three Card Brag Game:&#10; Three cards will be dealt to each player. A player who hods any of the cards winds:&#10;Three 3's or an Ace&#10;2 or 3 of the same card or sit&#10;King, Queen or Jack.&#10;If two players both have winning hands. Three 3's or an ace beat 2 or 3 cards of same suit or number and also beats a King, Queen or Jack.&#10;if it is a tie no one wins">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="tfplayer1" layoutX="6.0" layoutY="130.0" prefHeight="31.0" prefWidth="147.0" promptText="Player 1 Name" />
+      <TextField fx:id="tfplayer2" layoutX="6.0" layoutY="277.0" prefHeight="31.0" prefWidth="147.0" promptText="Player 2 Name" />
+      <Button fx:id="bcards" layoutX="308.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleDealButtonAction" prefHeight="31.0" prefWidth="128.0" text="Deal Cards" />
+      <Button fx:id="bwinner" layoutX="304.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleWinnerAction" prefHeight="31.0" prefWidth="137.0" text="Show Winner" />
+      <ImageView fx:id="imgPlayer1Card1" fitHeight="101.0" fitWidth="77.0" layoutX="25.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/b2fv.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPlayer1Card2" fitHeight="101.0" fitWidth="77.0" layoutX="105.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/b2fv.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPlayer1Card3" fitHeight="101.0" fitWidth="77.0" layoutX="185.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/b2fv.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPlayer2Card3" fitHeight="101.0" fitWidth="77.0" layoutX="185.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/b2fv.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPlayer2Card2" fitHeight="101.0" fitWidth="77.0" layoutX="105.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/b2fv.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPlayer2Card1" fitHeight="101.0" fitWidth="77.0" layoutX="25.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/b2fv.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
